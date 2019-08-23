@@ -9,20 +9,11 @@ package figuras;
  *
  * @author Cheetos Laptop
  */
-public class figura {
+public interface figura {
 
-    public double area;
-    public double perimetro;
+    public double Area();
+    public double perimetro();
 
-    public double Area() {
-        return this.area;
-    }
-
-    public double perimetro() {
-        return this.perimetro;
-    }
-
-    public int getLados() {
-        return 0;
-    }
+    public int getLados();
+    
 }

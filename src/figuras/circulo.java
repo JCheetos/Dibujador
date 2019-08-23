@@ -9,11 +9,30 @@ package figuras;
  *
  * @author Cheetos Laptop
  */
-public class circulo extends figura {
+public class circulo implements figura {
+    
+    public double area;
+    public double perimetro;
     public double radio;
+    
     public circulo(double radio){
         this.radio= radio;
-        this.area= 2*Math.PI*Math.pow(this.radio, 2);
+        this.area= Math.PI*Math.pow(this.radio, 2);
         this.perimetro= 2*Math.PI*this.radio;
+    }
+
+    @Override
+    public double Area() {
+       return area;
+    }
+
+    @Override
+    public double perimetro() {
+        return perimetro; 
+    }
+
+    @Override
+    public int getLados() {
+        return 360;
     }
 }

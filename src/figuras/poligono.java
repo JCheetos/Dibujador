@@ -9,16 +9,11 @@ package figuras;
  *
  * @author Cheetos Laptop
  */
-public class poligono extends figura{
-    public int lados;
-    public double longitud;
+public interface poligono{
     
-    @Override
-    public int getLados(){
-        return lados;
-    }
-    
-    public double getLongitud(){
-        return longitud;
-    }
+    public double getLongitud();
+    public double getPerimetro();
+    public double getArea();
+    public int getLados();
+
 }
