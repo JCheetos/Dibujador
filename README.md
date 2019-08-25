@@ -8,4 +8,4 @@
  Johan Mendez - 20172020070
 
 ### Modelo
-![MODELO](modelo.png) 
+![MODELO](modelo1.png) 
